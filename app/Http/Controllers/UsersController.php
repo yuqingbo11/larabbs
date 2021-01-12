@@ -14,7 +14,7 @@ class UsersController extends Controller
         $this->middleware('auth', ['except' => ['show']]);
     }
 
-    public function show(User $user)
+    public function show(Request $request, User $user)
     {
         return view('users.show', compact('user'));
     }
