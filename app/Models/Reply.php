@@ -16,4 +16,6 @@ class Reply extends Model
     {
         return $this->belongsTo(Topic::class);
     }
+
+
 }
